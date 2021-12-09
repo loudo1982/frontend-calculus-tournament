@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.4.15",
+    "apollo-link-context": "^1.0.20",
+    "fetch-blob": "^3.1.2",
+    "formik": "^2.2.9",
+    "graphql": "^15.6.0",
+    "next": "11.1.2",
+    "node-fetch": "^3.0.0",
+    "react": "17.0.2",
+    "react-brackets": "^0.4.6",
+    "react-dom": "17.0.2",
+    "react-step-progress-bar": "^1.0.3",
+    "react-transition-group": "^4.4.2",
+    "stream": "0.0.2",
+    "stream-http": "^3.2.0",
+    "sweetalert2": "^11.1.9",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.6",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16"
+  }
+}
