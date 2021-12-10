@@ -55,7 +55,7 @@ const Header = () => {
          <p className="mr-2 text-white">Bienvenido {nombre} </p>
          <button type="button"
          onClick={()=>cerrarSesion()}
-         className="bg-blue-800 w-full sm:w-auto font-bold uppercase text-xs rounded py-1 px-2 text-white shadow-md">Cerrar sesión</button>
+         className="bg-gray-700 w-full sm:w-auto font-bold uppercase text-xs rounded py-1 px-2 text-white shadow-md">Cerrar sesión</button>
         </div>
     );
 };

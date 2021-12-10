@@ -208,7 +208,7 @@ const Misequipos = () => {
             <Layout>
            
            <h1 className="  text-center text-white text-3xl underline"> Mis equipos</h1>
-           {!data.obtenerEquipoCreadador  || data.obtenerEquipoCreadador.length===0?  <h1 className="  text-center text-white text-3xl m-4">No has creado equipos todavia</h1>: <h1 className="  text-center text-white text-3xl"> {`¡Inscribiste a ${data.obtenerEquipoCreadador.length} equipos!`}</h1>}
+           {!data.obtenerEquipoCreadador  || data.obtenerEquipoCreadador.length===0?  <h1 className="  text-center text-white text-3xl m-4">No has creado equipos todavia</h1>: <h1 className="  text-center text-white text-3xl"> {`¡Inscribiste a ${data.obtenerEquipoCreadador.length} equipo!`}</h1>}
            {!data1.obtenerUsuario? <h1 className="  text-center text-white text-3xl m-4">Debes conectarte para poder crear equipos</h1>: <h1 className="  text-center text-white text-3xl"> </h1>}
             
           
@@ -240,44 +240,44 @@ const Misequipos = () => {
                  
                    
                    
-                   <tr key={equipo.id} className="bg-red-300 lg:hover:bg-gray-100 flex lg:table-row flex-row lg:flex-row flex-wrap lg:flex-no-wrap mb-10 lg:mb-0">
+                   <tr key={equipo.id} className="bg-gray-300 lg:hover:bg-gray-100 flex lg:table-row flex-row lg:flex-row flex-wrap lg:flex-no-wrap mb-10 lg:mb-0">
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">#</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">#</span>
                            {i+1}
                        </td>
                         <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                        <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Nombre equipo:</span>
+                        <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Nombre equipo:</span>
                            {equipo.NombreEquipo}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Escuela:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Escuela:</span>
                            {equipo.Escuela}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Juagador 1:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Juagador 1:</span>
                            {equipo.joueur1.nombre}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Jugador 2</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Jugador 2</span>
                            {equipo.joueur2.nombre}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Juagdor 3:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Juagdor 3:</span>
                            {equipo.joueur3.nombre}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Jugador 4:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Jugador 4:</span>
                            {equipo.joueur4.nombre}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Coach:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Coach:</span>
                            {equipo.coach.nombre}
                        </td>
                       
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
                           <button 
                           type="button" 
-                          className="flex justify-center items-center m-2 bg-red-800 py-2 text-white rounded text-xs uppercase font-bold w-full "
+                          className="flex justify-center items-center m-2 bg-gray-800 py-2 text-white rounded text-xs uppercase font-bold w-full "
                           onClick={()=>confirmarEliminarCliente(equipo.id)}>
                               Eliminar 
                               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>

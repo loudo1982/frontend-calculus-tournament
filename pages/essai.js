@@ -190,7 +190,7 @@ const[crearnuevoEquipo]=useMutation(CREAREQUIPO,{
 
 const mostrarMensaje=()=>{
     return(
-        <div className="bg-white py-2 px-3 w-full my-3 text-center mx-auto border-l-4 border-red-700">
+        <div className="bg-white py-2 px-3 w-full my-3 text-center mx-auto border-l-4 border-gray-700">
             <p>{mensaje}</p>
         </div>
     )
@@ -284,7 +284,7 @@ const mostrarMensaje=()=>{
                      </label>
                      <Field name="Escuela" placeholder="Escuela" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" />
          {errors.Escuela && touched.Escuela ? (
-              <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+              <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
               <p className="font-bold">Error</p>
            <div >{errors.Escuela}</div></div>
          ) : null}
@@ -296,7 +296,7 @@ const mostrarMensaje=()=>{
                      </label>
          <Field name="NombreEquipo" placeholder="Nombre del equipo" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
          {errors.NombreEquipo && touched.NombreEquipo ? (
-              <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+              <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
            <div>{errors.NombreEquipo}</div></div>
          ) : null}
          <br /> </div>
@@ -310,7 +310,7 @@ const mostrarMensaje=()=>{
          <Field name="joueur1.nombre" placeholder="Nombre" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"   />
         
         {errors.joueur1 && errors.joueur1.nombre && touched.joueur1 ? (
-             <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+             <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur1.nombre}</div> </div>
         ) : (
           ""
@@ -326,7 +326,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur1.matricula" placeholder="Matricula " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur1 && errors.joueur1.matricula && touched.joueur1 ? (
-             <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+             <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur1.matricula}</div></div>
         ) : (
           ""
@@ -340,7 +340,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur1.email" placeholder="Email " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur1 && errors.joueur1.email && touched.joueur1 ? (
-             <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+             <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur1.email}</div></div>
         ) : (
           ""
@@ -355,7 +355,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur2.nombre" placeholder="Nombre " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur2 && errors.joueur2.nombre && touched.joueur2 ? (
-             <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+             <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur2.nombre}</div></div>
         ) : (
           ""
@@ -370,7 +370,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur2.matricula" placeholder="Matricula" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur2 && errors.joueur2.matricula && touched.joueur2 ? (
-             <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+             <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur2.matricula}</div></div>
         ) : (
           ""
@@ -385,7 +385,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur2.email" placeholder="Email" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur2 && errors.joueur2.email && touched.joueur2 ? (
-              <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+              <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur2.email}</div></div>
         ) : (
           ""
@@ -402,7 +402,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur3.nombre" placeholder="nombre joueur 3 " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur3 && errors.joueur3.nombre && touched.joueur3 ? (
-              <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+              <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur3.nombre}</div></div>
         ) : (
           ""
@@ -417,7 +417,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur3.matricula" placeholder="matricula joueur 3 " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur3 && errors.joueur3.matricula && touched.joueur3 ? (
-             <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+             <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur3.matricula}</div></div>
         ) : (
           ""
@@ -432,7 +432,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur3.email" placeholder="Email  " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur3 && errors.joueur3.email && touched.joueur3 ? (
-            <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+            <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur3.email}</div></div>
         ) : (
           ""
@@ -447,7 +447,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur4.nombre" placeholder="Nombre" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur4 && errors.joueur4.nombre && touched.joueur4 ? (
-            <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+            <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur4.nombre}</div></div>
         ) : (
           ""
@@ -462,7 +462,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur4.matricula" placeholder="Matricula" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur4 && errors.joueur4.matricula && touched.joueur4  ? (
-            <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+            <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur4.matricula}</div></div>
         ) : (
           ""
@@ -477,7 +477,7 @@ const mostrarMensaje=()=>{
         <Field name="joueur4.email" placeholder="Email" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.joueur4 && errors.joueur4.email && touched.joueur4 ? (
-            <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+            <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.joueur4.email}</div></div>
         ) : (
           ""
@@ -493,7 +493,7 @@ const mostrarMensaje=()=>{
         <Field name="coach.nombre" placeholder="Nombre " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.coach && errors.coach.nombre && touched.coach ? (
-            <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+            <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.coach.nombre}</div></div>
         ) : (
           ""
@@ -508,7 +508,7 @@ const mostrarMensaje=()=>{
         <Field name="coach.matricula" placeholder="Nomina" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.coach && errors.coach.matricula && touched.coach ? (
-            <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+            <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.coach.matricula}</div></div>
         ) : (
           ""
@@ -523,7 +523,7 @@ const mostrarMensaje=()=>{
         <Field name="coach.email" placeholder="Email " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
         {errors.coach && errors.coach.email && touched.coach ? (
-            <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+            <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
           <div>{errors.coach.email}</div></div>
         ) : (
           ""
@@ -533,7 +533,7 @@ const mostrarMensaje=()=>{
         <div className="mb-4">
         <input 
                  type="submit"
-                 className=" bg-red-400 w-full mt-3 p-2 text-white uppercase text-2xl hover:bg-red-500"
+                 className=" bg-gray-700 w-full mt-3 p-2 text-white uppercase text-2xl hover:bg-gray-500"
                  value="Crear equipo"/> </div>
      </Form> </div>
       )}

@@ -113,14 +113,14 @@ const Conexion = () => {
                        onBlur={formik.handleBlur}
                        value={formik.values.email}></input>
                          {formik.touched.email && formik.errors.email ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.email}</p>
                        </div>
                    ) : null}
                    </div>
                    <div className="mb-4">
-                       <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="matricula">
+                       <label className="block-text-white text-sm font-bold mb-10"  htmlFor="matricula">
                            Matricula
                        </label>
                        <input className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -130,7 +130,7 @@ const Conexion = () => {
                        onBlur={formik.handleBlur}
                        value={formik.values.matricula}></input>
                          {formik.touched.matricula && formik.errors.matricula ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.matricula}</p>
                        </div>
@@ -149,7 +149,7 @@ const Conexion = () => {
                        value={formik.values.password}>
                        </input>
                        {formik.touched.password && formik.errors.password ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.password}</p>
                        </div>
@@ -157,11 +157,11 @@ const Conexion = () => {
                    </div>
                    <input 
                    type="submit"
-                   className=" bg-red-400 w-full mt-3 p-2 text-white uppercase text-2xl hover:bg-red-500"
+                   className=" bg-gray-700 w-full mt-3 p-2 text-white uppercase text-2xl hover:bg-gray-500"
                    value="Iniciar sesión"/>
                     <input 
                    type="submit"
-                   className=" bg-red-400 w-full mt-3 p-2 text-white uppercase text-2xl hover:bg-red-500"
+                   className=" bg-gray-700 w-full mt-3 p-2 text-white uppercase text-2xl hover:bg-gray-500"
                    value="No tienes cuenta ?"
                    onClick={()=>crearlaCuenta()}/>
 

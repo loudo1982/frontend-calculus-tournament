@@ -79,56 +79,60 @@ const Index = ()=>{
   
     <Layout>
     <h1 className="text-4xl font-normal leading-normal mb-2 text-white text-center underline mt-6">
-  Convocatoria del toreno de cultura general
+  Convocatoria del torneo de cálculo
 </h1>
 <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline ">
 Objetivo:
 </h1>
 
-<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700 ">
-El objetivo es una competencia de aplicación de conocimientos generales en formato de torneo.
+<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white ">
+El objetivo es una competencia de aplicación de los conocimientos de Cálculo I y Cálculo II en formato torneo respetando el plan analítico de Prepa Tec. 
+
 
 </p>
 <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline">
 Reglas: 
 </h1>
 
-<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700   ">
+<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white   ">
 Las inscripciones son abiertas hasta alcanzar un máximo de 32 equipos.
 
 
 
 </p>
-<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700 ">
+<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white ">
   Cada equipo asignará a un coach que lo representará, mismos que estarán presentes el día del torneo apoyando al comité organizador.Las o los coaches deben ser profesores de la institución.</p>
 
-<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700">Los equipos se enfrentarán 1 a 1 en eliminatorias de 10 minutos, donde obtendremos un ganador que pasará a la siguiente ronda, así sucesivamente hasta obtener un equipo campeón.</p>
+<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white">Los equipos se enfrentarán 1 a 1 en eliminatorias de 15 a 20 minutos, donde obtendremos un ganador que pasará a la siguiente ronda, así sucesivamente hasta obtener un equipo campeón.</p>
 
 <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline ">
 A quién está dirigido:
 </h1>
-<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700 ">Está dirigido a alumnos de preparatoria de Prepa Tec de cualquier nivel.
+<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white ">Está dirigido a alumnos de preparatoria de Prepa Tec de sexto grado que han cursado las materias de cálculo 1 y cálculo 2.
 
      </p>
 
      <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline">Fecha del evento: </h1>
-     <p className=" text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700 "> Miércoles 24 de noviembre de las 4:00 pm hora centro por zoom: 769 910 7319
-La duración del evento es de 1 hora.
+     <p className=" text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white "> Martes 27 de Abril de las 9:00 am hasta las 6:00 pm en Guadalajara. 
+La duración del evento es de 1 día.
  </p>
 
      <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline w-4/6 ">Cierre de inscripciones:
  </h1>
-     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700 "> Sábado 20 de noviembre a medianoche.
+     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white "> Viernes 23 de abril a medianoche.
 </p>
 <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline">Premios: 
  </h1>
-     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700 ">El equipo ganador y el segundo lugar tendrán un premio (tarjetas de regalo Amazon).
+     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white ">El equipo ganador y el segundo lugar tendrán un premio (tarjetas de regalo Amazon).
 </p>
 <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline ">Organizadores: 
  </h1>
-     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700  "> Ludovic Betton ( ludovic@tec.mx) y David Vizcaíno (david.vizcaino@tec.mx)
+     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white  ">Carlos Aurelio Robles Amador:	PrepaTec Metepec 		mail: ca.robles.amador@tec.mx 
+<p>Tiberiu Hrabak: PrepaTec Guadalajara		mail:thrabak@tec.mx </p>
+<p>Osvaldo Samayoa Ochoa:PrepaTec Chiapas mail: osvaldo.samayoa@tec.mx </p>
+ <p>Ludovic Betton: PrepaTec Sonora Norte 	mail: ludovic@tec.mx  </p>
 </p>
-<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-400 border-2 border-red-700  "> Más información al whatsapp:6624332660
+<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white  "> Más información al whatsapp: 6624332660
 </p>
 
     </Layout>

@@ -84,7 +84,7 @@ const Createaccount = () => {
     })
     const mostrarMensaje=()=>{
         return(
-            <div className="bg-white py-2 px-3 w-full my-3 text-center mx-auto border-l-4 border-red-700">
+            <div className="bg-white py-2 px-3 w-full my-3 text-center mx-auto border-l-4 border-gray-700">
                 <p>{mensaje}</p>
             </div>
         )
@@ -115,7 +115,7 @@ const Createaccount = () => {
                        </input>
                    </div>
                    {formik.touched.nombre && formik.errors.nombre ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.nombre}</p>
                        </div>
@@ -133,7 +133,7 @@ const Createaccount = () => {
                        </input>
                    </div>
                    {formik.touched.apellido && formik.errors.apellido ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.apellido}</p>
                        </div>
@@ -151,7 +151,7 @@ const Createaccount = () => {
                        onBlur={formik.handleBlur}></input>
                    </div>
                    {formik.touched.email && formik.errors.email ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.email}</p>
                        </div>
@@ -168,7 +168,7 @@ const Createaccount = () => {
                        onBlur={formik.handleBlur}></input>
                    </div>
                    {formik.touched.matricula && formik.errors.matricula ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.matricula}</p>
                        </div>
@@ -187,14 +187,14 @@ const Createaccount = () => {
                        ></input>
                    </div>
                    {formik.touched.password && formik.errors.password ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.password}</p>
                        </div>
                    ) : null}
                    <input 
                    type="submit"
-                   className=" bg-red-400 w-full mt-3 p-2 text-white uppercase text-2xl hover:bg-red-500"
+                   className=" bg-gray-800 w-full mt-3 p-2 text-white uppercase text-2xl hover:bg-gray-600"
                    value="Crear cuenta"/>
 
                 </form>

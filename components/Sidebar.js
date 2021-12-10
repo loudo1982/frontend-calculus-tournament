@@ -43,7 +43,7 @@ const Sidebar = () => {
     }
     return (
         <>
-        <nav className='flex items-center flex-wrap bg-red-400 p-1 border-double border-2 w-full  '>
+        <nav className='flex items-center flex-wrap bg-gray-800 p-1 border-double border-2 w-full  '>
         <Link href='/'>
           <a className='inline-flex items-center p-2 mr-4 '>
         
@@ -51,12 +51,12 @@ const Sidebar = () => {
      
 
             <span className='text-xl text-white font-bold uppercase tracking-wide'>
-              Torneo de cultura general
+              Torneo de cálculo
             </span>
           </a>
         </Link>
         <button
-          className=' inline-flex p-3 hover:bg-red-300 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+          className=' inline-flex p-3 hover:bg-gray-500 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
           onClick={handleClick}
         >
           <svg
@@ -83,51 +83,51 @@ const Sidebar = () => {
           >
             <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto '>
             {data.obtenerUsuario? data.obtenerUsuario.role==='admin' && <> <Link href='/misequiposadmin'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white mr-80 '>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-gray-500 hover:text-white mr-80 '>
                   Administrar equipos
                 </a>
               </Link></>:<> <Link href='/misequipos'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white mr-80 '>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white mr-80 '>
                   Mis equipos creados
                 </a>
               </Link></>}
               {data.obtenerUsuario? data.obtenerUsuario.role==='user' && <> <Link href='/misequipos'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white mr-80 '>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white mr-80 '>
                   Mis equipos creados
                 </a>
               </Link></>:''}
               
               <Link href='/'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white '>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white '>
                   Convocatoria
                 </a>
               </Link>
               <Link href='/reglas'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white'>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white'>
                   Reglas
                 </a>
               </Link>
               <Link href='/mapas'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white'>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white'>
                   Mapa del Torneo 
                 </a>
               </Link>
               <Link href='/equipos'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white'>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white'>
                   Los equipos
                 </a>
               </Link>
               <Link href='/inscribirequipo'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white'>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white'>
                  Inscribir a un equipo
                 </a>
               </Link>
               {data.obtenerUsuario?<><Link href='/'>
-                <a  onClick={()=>deconnecter()} className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white'>
+                <a  onClick={()=>deconnecter()} className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white'>
                  Sign out
                 </a>
               </Link></>:<> <Link href='/conexion'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-red-300 hover:text-white'>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white'>
                  Sign in
                 </a>
               </Link></>}

@@ -101,37 +101,37 @@ const Equipos = () => {
                  
                    
                    
-                   <tr key={equipo.id} className="bg-red-300 lg:hover:bg-gray-100 flex lg:table-row flex-row lg:flex-row flex-wrap lg:flex-no-wrap mb-10 lg:mb-0">
+                   <tr key={equipo.id} className="bg-gray-300 lg:hover:bg-gray-100 flex lg:table-row flex-row lg:flex-row flex-wrap lg:flex-no-wrap mb-10 lg:mb-0">
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">#</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">#</span>
                            {i+1}
                        </td>
                         <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                        <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Nombre equipo:</span>
+                        <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Nombre equipo:</span>
                            {equipo.NombreEquipo}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Escuela:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Escuela:</span>
                            {equipo.Escuela}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Juagador 1:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Juagador 1:</span>
                            {equipo.joueur1.nombre}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Jugador 2</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Jugador 2</span>
                            {equipo.joueur2.nombre}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Juagdor 3:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Juagdor 3:</span>
                            {equipo.joueur3.nombre}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Jugador 4:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Jugador 4:</span>
                            {equipo.joueur4.nombre}
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
-                       <span className="lg:hidden absolute top-0 left-0 bg-red-300 px-2 py-4 text-xs font-bold uppercase">Coach:</span>
+                       <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Coach:</span>
                            {equipo.coach.nombre}
                        </td>
                        

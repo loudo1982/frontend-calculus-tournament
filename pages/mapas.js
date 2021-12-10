@@ -292,7 +292,7 @@ const enviarDatos = (event) => {
       
 <Fragment>
             
-            <form className="flex justify-center mt-4 bg-red-300 w-full "  onSubmit={enviarDatos} >
+            <form className="flex justify-center mt-4 bg-gray-700 w-full "  onSubmit={enviarDatos} >
                 <div className="mr-4">
                     <input type="text" placeholder="Ganador"  onChange={handleInputChange} name={index}
                     className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></input>
@@ -305,8 +305,8 @@ const enviarDatos = (event) => {
             </form>
            
         </Fragment>
-        <div className="min-h-screen bg-red-300 w-full h-screen">
-    <Bracket rounds={rounds}  roundClassName={'bg-red-300 '} /> 
+        <div className="min-h-screen bg-gray-700 w-full ">
+    <Bracket rounds={rounds}  roundClassName={'bg-gray-700 '} /> 
    </div>
 
       </Layout> 

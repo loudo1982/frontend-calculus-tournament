@@ -201,7 +201,7 @@ const Equipo = () => {
     
     const mostrarMensaje=()=>{
         return(
-            <div className="bg-white py-2 px-3 w-full my-3 text-center mx-auto border-l-4 border-red-700">
+            <div className="bg-white py-2 px-3 w-full my-3 text-center mx-auto border-l-4 border-gray-700">
                 <p>{mensaje}</p>
             </div>
         )
@@ -232,7 +232,7 @@ const Equipo = () => {
                    </div>
                    
                     {formik.touched.Escuela && formik.errors.Escuela ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.Escuela}</p> 
                        </div>
@@ -250,7 +250,7 @@ const Equipo = () => {
                        </input>
                    </div>
                    {formik.touched.NombreEquipo && formik.errors.NombreEquipo ? (
-                       <div className="my-2 bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                       <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-4">
                           <p className="font-bold">Error</p>
                           <p>{formik.errors.NombreEquipo}</p>
                        </div>
