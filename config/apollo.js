@@ -4,7 +4,7 @@ import {setContext} from 'apollo-link-context';
 
 const httpLink=createHttpLink({
     
-    uri: "http://localhost:4000/"
+    uri: "https://secure-lake-99098.herokuapp.com/"
     
 });
 
