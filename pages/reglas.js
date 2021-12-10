@@ -46,7 +46,7 @@ const Reglas = () => {
         <div>
           <Layout>
           <h1 className="text-4xl font-normal leading-normal mt-6 mb-2 text-white text-center underline">
-  Reglas del Torneo de cultura general
+  Reglas del Torneo de cálculo
 </h1>
             
          {/*  {data.obtenerUsuario?<h1>{`Tu role es: ${data.obtenerUsuario.role}`} </h1>:'Te invitamos a conectarte'}
