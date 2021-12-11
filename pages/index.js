@@ -131,9 +131,11 @@ La duración del evento es de 1 día.
 <p>Tiberiu Hrabak: PrepaTec Guadalajara		mail:thrabak@tec.mx </p>
 <p>Osvaldo Samayoa Ochoa:PrepaTec Chiapas mail: osvaldo.samayoa@tec.mx </p>
  <p>Ludovic Betton: PrepaTec Sonora Norte 	mail: ludovic@tec.mx  </p>
+ 
 </p>
 <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white  "> Más información al whatsapp: 6624332660
 </p>
+
 
     </Layout>
     
