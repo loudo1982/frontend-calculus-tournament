@@ -83,7 +83,7 @@ const Sidebar = () => {
           >
             <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto '>
             {data.obtenerUsuario? data.obtenerUsuario.role==='admin' && <> <Link href='/misequiposadmin'>
-                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center bg-gray-500 hover:text-white mr-80 '>
+                <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white mr-80 '>
                   Administrar equipos
                 </a>
               </Link></>:<> <Link href='/misequipos'>
