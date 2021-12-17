@@ -112,27 +112,27 @@ const Equipos = () => {
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
                        <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Escuela:</span>
-                           {equipo.Escuela}
+                       <p className="ml-20 md:ml-2 lg:ml-2"> {equipo.Escuela} </p>
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
                        <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Juagador 1:</span>
-                           {equipo.joueur1.nombre}
+                       <p className="ml-20 md:ml-2 lg:ml-2"> {equipo.joueur1.nombre}</p>
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
                        <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Jugador 2</span>
-                           {equipo.joueur2.nombre}
+                       <p className="ml-20 md:ml-2 lg:ml-2"> {equipo.joueur2.nombre} </p>
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
                        <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Juagdor 3:</span>
-                           {equipo.joueur3.nombre}
+                       <p className="ml-20 md:ml-2 lg:ml-2"> {equipo.joueur3.nombre} </p>
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
                        <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Jugador 4:</span>
-                           {equipo.joueur4.nombre}
+                       <p className="ml-20 md:ml-2 lg:ml-2"> {equipo.joueur4.nombre} </p>
                        </td>
                        <td className="w-full lg:w-auto p-3 text-gray-800 text-center border border-b block lg:table-cell relative lg:static">
                        <span className="lg:hidden absolute top-0 left-0 bg-gray-300 px-2 py-4 text-xs font-bold uppercase">Coach:</span>
-                           {equipo.coach.nombre}
+                       <p className="ml-20 md:ml-2 lg:ml-2">{equipo.coach.nombre} </p>
                        </td>
                        
                        </tr>
