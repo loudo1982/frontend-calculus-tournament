@@ -114,22 +114,22 @@ query ObtenerEquiposMutation {
       joueur1: Yup.object().shape({
         nombre: Yup.string().required("El nombre es obligatorio"),
         matricula: Yup.string().required("La matricula es obligatoria"),
-        email: Yup.string().required("El email es obligatorio").email('El email debe tener el formato de un email')
+        //email: Yup.string().required("El email es obligatorio").email('El email debe tener el formato de un email')
       }),
       joueur2: Yup.object().shape({
         nombre: Yup.string().required("El nombre es obligatorio"),
         matricula: Yup.string().required("La matricula es obligatoria"),
-        email: Yup.string().required("El email es obligatorio").email('El email debe tener el formato de un email')
+        //email: Yup.string().required("El email es obligatorio").email('El email debe tener el formato de un email')
       }),
       joueur3: Yup.object().shape({
         nombre: Yup.string().required("El nombre es obligatorio"),
         matricula: Yup.string().required("La matricula es obligatoria"),
-        email: Yup.string().required("El email es obligatorio").email('El email debe tener el formato de un email')
+       // email: Yup.string().required("El email es obligatorio").email('El email debe tener el formato de un email')
       }),
       joueur4: Yup.object().shape({
         nombre: Yup.string().required("El nombre es obligatorio"),
         matricula: Yup.string().required("La matricula es obligatoria"),
-        email: Yup.string().required("El email es obligatorio").email('El email debe tener el formato de un email')
+        //email: Yup.string().required("El email es obligatorio").email('El email debe tener el formato de un email')
       }),
       coach: Yup.object().shape({
         nombre: Yup.string().required("El nombre es obligatorio"),
@@ -227,10 +227,10 @@ const mostrarMensaje=()=>{
                     crearnuevoEquipoInput:{
                         Escuela,
                         NombreEquipo,
-                        joueur1:{nombre:joueur1.nombre,email:joueur1.email,matricula:joueur1.matricula},
-                        joueur2:{nombre:joueur2.nombre,email:joueur2.email,matricula:joueur2.matricula},
-                        joueur3:{nombre:joueur3.nombre,email:joueur3.email,matricula:joueur3.matricula},
-                        joueur4:{nombre:joueur4.nombre,email:joueur4.email,matricula:joueur4.matricula},                         
+                        joueur1:{nombre:joueur1.nombre,email:joueur1.matricula+'@tec.mx',matricula:joueur1.matricula},
+                        joueur2:{nombre:joueur2.nombre,email:joueur2.matricula+'@tec.mx',matricula:joueur2.matricula},
+                        joueur3:{nombre:joueur3.nombre,email:joueur3.matricula+'@tec.mx',matricula:joueur3.matricula},
+                        joueur4:{nombre:joueur4.nombre,email:joueur4.matricula+'@tec.mx',matricula:joueur4.matricula},                         
                         coach:{nombre:coach.nombre,email:coach.email,matricula:coach.matricula}
                         
                     }
@@ -278,11 +278,49 @@ const mostrarMensaje=()=>{
        <Form  className="bg-white rounded shadow-md px-8  pt-4 pb-4 mb-8">
       
      
-         
-         <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="Escuela">
-                         Escuela
+       <label className="block-text-gray-700 text-sm font-bold mb-10 "  htmlFor="Escuela">
+         Nombre de la Prepa Tec
                      </label>
-                     <Field name="Escuela" placeholder="Escuela" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2" />
+         
+                     <Field as="select" name="Escuela" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-2">
+                     <option value="">Elige tu Prepa </option>
+             <option value="Aguascalientes">Aguascalientes </option>
+             <option value="Chiapas">Chiapas</option>
+             <option value="Chihuahua">Chihuahua</option>
+             <option value="Ciudad de México">Ciudad de México</option>
+             <option value="Ciudad Juárez">Ciudad Juárez</option>
+             <option value="Ciudad Obregón">Ciudad Obregón </option>
+             
+             <option value="Colima">Colima</option>
+             <option value="Cuernavaca">Cuernavaca</option>
+             <option value="Cumbres">Cumbres </option>
+             <option value="Esmeralda">Esmeralda</option>
+             <option value="Estado de México">Estado de México</option>
+             <option value="Eugenio Garza lagüera">Eugenio Garza lagüera</option>
+             <option value="Eugenio Garza Sada">Eugenio Garza Sada </option>
+             <option value="Guadalajara">Guadalajara</option>
+             <option value="Hidalgo">Hidalgo</option>
+             <option value="Irapuato">Irapuato</option>
+             <option value="Laguna">Laguna </option>
+             <option value="León">León</option>
+             <option value="Metepec">Metepec</option>
+             <option value="Morelia">Morelia</option>
+             <option value="Navojoa">Navojoa</option>
+             <option value="Puebla">Puebla</option>
+             <option value="Querétaro">Querétaro</option>
+             <option value="Saltillo">Saltillo</option>
+             <option value="San luis Potosi">San Luis Potosi </option>
+             <option value="Santa Anita">Santa Anita</option>
+             <option value="Santa Catarina">Santa Catarina</option>
+             <option value="Santa Fe">Santa Fe</option>
+             <option value="Sinaloa">Sinaloa </option>
+             <option value="Sonora Norte">Sonora Norte</option>
+             <option value="Tampico">Tampico</option>
+             <option value="Toluca">Toluca</option>
+             <option value="Valle Alto">Valle Alto</option>
+             <option value="Zacatecas">Zacatecas</option>
+           </Field>
+                    
          {errors.Escuela && touched.Escuela ? (
               <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
               <p className="font-bold">Error</p>
@@ -333,19 +371,12 @@ const mostrarMensaje=()=>{
         )}
         <br /></div>
         <div className="mb-4">
-        <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="joueur1.email">
-         Email del jugador 1
-                     </label>
-
-        <Field name="joueur1.email" placeholder="Email " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
-        {errors.joueur1 && errors.joueur1.email && touched.joueur1 ? (
-             <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
-          <div>{errors.joueur1.email}</div></div>
-        ) : (
-          ""
-        )}
-        <br /></div>
+
+       
+        
+     
+        </div>
 
         <div className="mb-4">
         <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="joueur2.nombre">
@@ -376,21 +407,8 @@ const mostrarMensaje=()=>{
           ""
         )}
         <br /></div>
-        <div className="mb-4">
-        <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="joueur2.email">
-        Email del jugador 2
-                     </label>
-
-
-        <Field name="joueur2.email" placeholder="Email" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
-        {errors.joueur2 && errors.joueur2.email && touched.joueur2 ? (
-              <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
-          <div>{errors.joueur2.email}</div></div>
-        ) : (
-          ""
-        )}
-        <br /></div>
+        
 
         <div className="mb-4">
         <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="joueur3.nombre">
@@ -423,21 +441,7 @@ const mostrarMensaje=()=>{
           ""
         )}
         <br /></div>
-        <div className="mb-4">
-        <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="joueur3.email">
-        Email del jugador 3
-                     </label>
-
-
-        <Field name="joueur3.email" placeholder="Email  " className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
-        {errors.joueur3 && errors.joueur3.email && touched.joueur3 ? (
-            <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
-          <div>{errors.joueur3.email}</div></div>
-        ) : (
-          ""
-        )}
-        <br /></div>
         <div className="mb-4">
         <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="joueur4.nombre">
         Nombre del jugador 4
@@ -468,21 +472,7 @@ const mostrarMensaje=()=>{
           ""
         )}
         <br /></div>
-        <div className="mb-4">
-        <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="joueur4.email">
-        Email del jugador 4
-                     </label>
-
-
-        <Field name="joueur4.email" placeholder="Email" className="shadow appearance-none border rounded w-full py-1 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"  />
         
-        {errors.joueur4 && errors.joueur4.email && touched.joueur4 ? (
-            <div className="my-2 bg-gray-100 border-l-4 border-gray-500 text-gray-700 p-4">
-          <div>{errors.joueur4.email}</div></div>
-        ) : (
-          ""
-        )}
-        <br /></div>
         <div className="mb-4">
 
         <label className="block-text-gray-700 text-sm font-bold mb-10"  htmlFor="coach.nombre">
