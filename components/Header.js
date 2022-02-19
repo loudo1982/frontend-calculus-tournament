@@ -20,10 +20,11 @@ const Header = () => {
   
     
     const router=useRouter()
-    const {data,loading,error}=useQuery(OBTENER_USUARIO)
+    const {data,loading,error,client}=useQuery(OBTENER_USUARIO)
 
     const cerrarSesion =()=>{
         localStorage.removeItem('token');
+        client.clearStore();
         router.push('/')
 
     }
