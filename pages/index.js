@@ -113,30 +113,45 @@ A quién está dirigido:
      </p>
 
      <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline">Fecha del evento: </h1>
-     <p className=" text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white "> Martes 27 de Abril de las 9:00 am hasta las 6:00 pm en Guadalajara. 
-La duración del evento es de 1 día.
+     <p className=" text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white "> Viernes 22 de Abril de las 4:00 pm ( hora centro). 
+La duración del evento es de 2 a 3 horas.
  </p>
 
      <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline w-4/6 ">Cierre de inscripciones:
  </h1>
-     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white "> Viernes 23 de abril a medianoche.
+     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white "> Viernes 15 de abril a medianoche.
 </p>
 <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline">Premios: 
  </h1>
-     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white ">El equipo ganador y el segundo lugar tendrán un premio (tarjetas de regalo Amazon).
+     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white ">El equipo ganador y el segundo lugar tendrán un buen premio.
 </p>
+
+<h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline ">
+Los temas del torneo:
+</h1>
+<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white ">
+ <li>Asíntotas y puntos huecos</li>
+
+<li>análisis de funciones polinomiales y racionales</li>
+<li>Cinemática</li>
+ <li>Razones de cambio </li>
+<li>Áreas</li> 
+<li>Volúmenes</li> 
+<li>Optimización</li>
+
+     </p>
+<div>
 <h1 className="text-2xl font-normal leading-normal mt-0 mb-2 text-white ml-8 underline ">Organizadores: 
  </h1>
-     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white  ">Carlos Aurelio Robles Amador:	PrepaTec Metepec 		mail: ca.robles.amador@tec.mx 
-<p>Tiberiu Hrabak: PrepaTec Guadalajara		mail:thrabak@tec.mx </p>
-<p>Osvaldo Samayoa Ochoa:PrepaTec Chiapas mail: osvaldo.samayoa@tec.mx </p>
- <p>Ludovic Betton: PrepaTec Sonora Norte 	mail: ludovic@tec.mx  </p>
- 
+     <p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white  ">Carlos Aurelio Robles Amador:	PrepaTec Metepec ;		mail: ca.robles.amador@tec.mx 
+<p>Tiberiu Hrabak: PrepaTec Guadalajara	;	mail:thrabak@tec.mx </p>
+<p>Osvaldo Samayoa Ochoa:PrepaTec Chiapas; mail: osvaldo.samayoa@tec.mx </p>
+ <p>Ludovic Betton: PrepaTec Sonora Norte ;	mail: ludovic@tec.mx  </p>
+ <p className="text-2xl font-light leading-relaxed mt-0 mb-8  pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white  "> Más información al whatsapp: 6624332660</p>
 </p>
-<p className="text-2xl font-light leading-relaxed mt-0 mb-4 ml-8 pl-2 text-white w-4/6 text-left bg-gray-500 border-2 border-white  "> Más información al whatsapp: 6624332660
-</p>
+
 <p className="bg-gray-700">.
-</p>
+</p></div>
 
 
     </Layout>
