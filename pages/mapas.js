@@ -139,12 +139,12 @@ const Mapas = () => {
         },
         {
           id: 13,
-          date: 'Room 13 juez: Eloir Gilbon',
+          date: 'Room 13 juez:Brenda Verdugo ',
           teams: [{ name: equipos[1]}, { name:  equipos[15] }],
         },
         {
           id: 14,
-          date:'Room 14 Juez: Brenda Verdugo',
+          date:'Room 14 Juez: Eloir Gilbon',
           teams: [{ name: equipos[7] }, { name: equipos[13] }],
         },
         {
