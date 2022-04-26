@@ -41,6 +41,8 @@ const Sidebar = () => {
       router.reload('/')
       
     }
+
+  
     return (
         <>
         <nav className='flex items-center flex-wrap bg-gray-800 p-1 border-double border-2 w-full  '>
@@ -82,7 +84,7 @@ const Sidebar = () => {
             }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
           >
             <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto '>
-            {data.obtenerUsuario? data.obtenerUsuario.role==='admin' && <> <Link href='/misequiposadmin'>
+            {data? data.obtenerUsuario.role==='admin' && <> <Link href='/misequiposadmin'>
                 <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white mr-80 '>
                   Administrar equipos
                 </a>
@@ -91,7 +93,7 @@ const Sidebar = () => {
                   Mis equipos creados
                 </a>
               </Link></>}
-              {data.obtenerUsuario? data.obtenerUsuario.role==='user' && <> <Link href='/misequipos'>
+              {data? data.obtenerUsuario.role==='user' && <> <Link href='/misequipos'>
                 <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white mr-80 '>
                   Mis equipos creados
                 </a>
@@ -127,7 +129,7 @@ const Sidebar = () => {
                  Inscribir a un equipo
                 </a>
               </Link>
-              {data.obtenerUsuario?<><Link href='/'>
+              {data?<><Link href='/'>
                 <a  onClick={()=>deconnecter()} className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white'>
                  Sign out
                 </a>
